@@ -1793,6 +1793,10 @@ tbody th {
   max-width: 500px;
 }
 
+#ai-coach.band {
+  align-items: start;
+}
+
 .band-points {
   margin: 16px 0 0;
   padding: 0;
@@ -1839,24 +1843,6 @@ tbody th {
   display: block;
   width: 100%;
   height: auto;
-}
-
-.shot-panel {
-  width: min(520px, 100%);
-  margin-inline: auto;
-  padding: 10px;
-  box-sizing: border-box;
-  border-radius: 22px;
-  background: #10182a;
-  border: 1px solid var(--border);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
-}
-
-.shot-panel img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 14px;
 }
 
 .band-note {
