@@ -381,6 +381,20 @@ h1 span {
 .store-link {
   display: inline-flex;
   line-height: 0;
+  padding: 6px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+  background: rgba(8, 14, 26, 0.35);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.store-link:hover,
+.store-link:focus-visible {
+  border-color: var(--azure);
+  box-shadow:
+    0 0 0 1px rgba(0, 127, 255, 0.45),
+    0 0 18px rgba(0, 127, 255, 0.35);
+  outline: none;
 }
 
 .store-link img,
@@ -1585,6 +1599,15 @@ tbody th {
   border: 1px solid var(--border);
   border-radius: 16px;
   background: #121a2b;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.why-row-list li:hover,
+.why-row-list li:focus-within {
+  border-color: var(--azure);
+  box-shadow:
+    0 0 0 1px rgba(0, 127, 255, 0.4),
+    0 0 20px rgba(0, 127, 255, 0.28);
 }
 
 .why-row-list a:hover h3,
@@ -1615,8 +1638,16 @@ tbody th {
 }
 
 .why-row-list li.why-ai {
-  border-color: rgba(0, 127, 255, 0.55);
+  border-color: rgba(255, 255, 255, 0.14);
   background: #101c33;
+}
+
+.why-row-list li.why-ai:hover,
+.why-row-list li.why-ai:focus-within {
+  border-color: var(--azure);
+  box-shadow:
+    0 0 0 1px rgba(0, 127, 255, 0.5),
+    0 0 22px rgba(0, 127, 255, 0.32);
 }
 
 .why-ai-label {
@@ -1797,6 +1828,17 @@ tbody th {
   color: var(--muted);
   font-size: 0.98rem;
   line-height: 1.45;
+}
+
+.shot-wide {
+  width: min(520px, 100%);
+  margin-inline: auto;
+}
+
+.shot-wide img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .shot-panel {
