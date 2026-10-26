@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PumpIt — Your Training. Your Way.</title>
+  <meta name="description" content="Build your training plan, track every set, and adapt your workout when equipment is busy or your training needs to change. Free on Android. iPhone coming soon.">
+  <link rel="canonical" href="https://pumpit.app/">
+  <meta name="theme-color" content="#0B1220">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PumpIt">
+  <meta property="og:title" content="PumpIt — Your Workout. Your Progress.">
+  <meta property="og:description" content="Build your training plan, track every set, and adapt your workout when equipment is busy or your training needs to change.">
+  <meta property="og:url" content="https://pumpit.app/">
+  <meta property="og:image" content="https://pumpit.app/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PumpIt — Your Workout. Your Progress.">
+  <meta name="twitter:description" content="Build your training plan, track every set, and adapt your workout when equipment is busy or your training needs to change.">
+  <meta name="twitter:image" content="https://pumpit.app/assets/og.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "PumpIt",
+    "operatingSystem": "Android",
+    "applicationCategory": "HealthApplication",
+    "description": "Fitness app for building workout plans, logging sets, and tracking personal records and progress.",
+    "downloadUrl": "https://play.google.com/store/apps/details?id=com.pumpit.fitness",
+    "installUrl": "https://play.google.com/store/apps/details?id=com.pumpit.fitness",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "url": "https://pumpit.app/"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="assets/mark.png" alt="" width="68" height="33">
+        PumpIt
+      </a>
+      <details class="nav-details">
+        <summary aria-label="Menu"><span>Menu</span><i class="burger" aria-hidden="true"></i></summary>
+        <ul class="nav-links">
+          <li><a href="#discover">Features</a></li>
+          <li><a href="#plans">Plans</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </details>
+      <a class="btn btn-primary header-cta" href="https://play.google.com/store/apps/details?id=com.pumpit.fitness">Get the App</a>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="home-hero">
+      <div class="wrap">
+        <h1 class="visually-hidden">Your Workout. Your Progress.</h1>
+        <div class="hero-frame">
+          <img class="hero-banner" src="assets/hero-banner.jpg" width="1024" height="500" alt="PumpIt. Train smarter. Track progress. Build a stronger you. Phone screens show a workout, the AI coach, and progress." fetchpriority="high" decoding="async">
+          <a class="hero-play store-link" href="https://play.google.com/store/apps/details?id=com.pumpit.fitness" aria-label="Get PUMPIT on Google Play">
+            <img src="assets/google-play-badge.png" width="646" height="250" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-row" aria-labelledby="why-pumpit">
+      <div class="wrap">
+        <h2 id="why-pumpit">Why PUMPIT?</h2>
+        <ul class="why-row-list">
+          <li>
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 32 32" width="28" height="28"><rect x="5" y="8" width="22" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 24 L24 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </span>
+            <h3>Ad-Free Workouts</h3>
+            <p>Train without interruptions.</p>
+          </li>
+          <li>
+            <a href="#energy">
+              <span class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" width="28" height="28"><path d="M17 4 L8 18 h7 l-1 10 11-16 h-7 z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+              </span>
+              <h3>PUMPIT ENERGY</h3>
+              <p>Understand your daily energy score.</p>
+            </a>
+          </li>
+          <li>
+            <a href="#shorten">
+              <span class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" width="28" height="28"><circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 10 v6 l4 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              </span>
+              <h3>Short on Time?</h3>
+              <p>Fit your session into your day.</p>
+            </a>
+          </li>
+          <li class="why-ai">
+            <a href="#ai-coach">
+              <span class="why-icon" aria-hidden="true">
+                <svg viewBox="0 0 32 32" width="28" height="28"><path d="M16 5 l1.6 5.2 L23 12 l-5.4 1.8 L16 19 l-1.6-5.2 L9 12 l5.4-1.8 Z" fill="currentColor"/><path d="M24 17 l.8 2.4 L27 20 l-2.2.8 L24 23 l-.8-2.2 L21 20 l2.2-.6 Z" fill="currentColor"/></svg>
+              </span>
+              <span class="why-ai-label">AI PRO</span>
+              <h3>AI Coach</h3>
+              <p>Turn your training data into smarter next steps.</p>
+              <span class="view-feature">Explore AI Coach →</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block" id="discover">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Discover what makes PumpIt different</h2>
+          <p>The tools that change a session. Each card opens that feature below. <a href="features/index.html">All screens</a>.</p>
+        </div>
+        <div class="discover-grid">
+          <a class="card discover-card" href="#energy"><h3>PUMPIT Energy</h3><p>Today's score from sleep, recovery, and training. You still choose the workout.</p><span class="view-feature">View feature →</span></a>
+          <a class="card discover-card" href="#replace"><h3>Replace Exercise</h3><p>Swap a lift during the workout. Free chooses, Plus suggests, AI Pro ranks.</p><span class="view-feature">View feature →</span></a>
+          <a class="card discover-card" href="#shorten"><h3>Short on Time</h3><p>Fit today into 15–40 minutes. The saved program stays as it is.</p><span class="view-feature">View feature →</span></a>
+          <a class="card discover-card" href="#load"><h3>Training Load</h3><p>See whether this week sits low, optimal, or high against your range.</p><span class="view-feature">View feature →</span></a>
+          <a class="card discover-card" href="#monitor"><h3>Training Monitor</h3><p>On AI Pro, a flag when load, volume, or consistency moves off your baseline.</p><span class="view-feature">View feature →</span></a>
+          <a class="card discover-card" href="#ai-coach"><h3>Coach Score</h3><p>Consistency, strength, workout quality, and recovery in one weekly score.</p><span class="view-feature">View feature →</span></a>
+          <a class="card discover-card" href="#adapt"><h3>Auto-Adapt</h3><p>A concrete plan change. Nothing is saved until you tap Apply Change.</p><span class="view-feature">View feature →</span></a>
+          <a class="card discover-card" href="#programs"><h3>Programs</h3><p>Build a plan by hand, or open a library matched to where you train.</p><span class="view-feature">View feature →</span></a>
+          <a class="card discover-card" href="#progress"><h3>Progress</h3><p>Records, strength, and this month against the last.</p><span class="view-feature">View feature →</span></a>
+          <a class="card discover-card" href="#nutrition"><h3>Nutrition</h3><p>Today's targets, the week, and a shopping list on AI Pro.</p><span class="view-feature">View feature →</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="features-detail">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>See every feature in action</h2>
+          <p>Real Android screens. A number in a screenshot is one example, not a result PumpIt promises.</p>
+        </div>
+
+        <article class="band" id="energy">
+          <div class="band-copy">
+            <p class="eyebrow">Every plan</p>
+            <h2>Know today's energy before you start.</h2>
+            <p>The score is today's training energy, from 0 to 100. It is a training signal, not a medical diagnosis. The 83 on this card is one example.</p>
+            <p>Morning readiness comes from sleep, recovery, and recent training. Activity during the day, time awake, and a limited nap credit can move the current score. PUMPIT STRESS is shown beside it and does not change the score.</p>
+            <ul class="band-points">
+              <li>Plus can offer a lighter session next to the original</li>
+              <li>AI Pro can add a workout for today only</li>
+              <li>A low score never blocks Start Workout</li>
+            </ul>
+          </div>
+          <div class="shot-panel">
+            <img src="assets/shots/energy.jpg" width="1080" height="631" alt="PUMPIT Energy card with a score of 83 out of 100, one example." decoding="async">
+          </div>
+        </article>
+
+        <article class="band flip" id="replace">
+          <div class="band-copy">
+            <p class="eyebrow">Every plan</p>
+            <h2>Swap the exercise without ending the session.</h2>
+            <p>From the live workout, open Replace Exercise and pick a reason: no equipment, equipment busy, too difficult, or pain or discomfort.</p>
+            <p>Free is a manual swap. Plus suggests options for the same muscles. AI Pro ranks them as AI Recommended. The swap is for this session. Pain or discomfort is a reason to change the exercise, not a medical assessment.</p>
+            <ul class="band-points">
+              <li>Stay on the same workout screen</li>
+              <li>Manual choice, a suggestion, or an AI ranking</li>
+              <li>Log the exercise you actually did</li>
+            </ul>
+          </div>
+          <div class="shot-phone">
+            <img src="assets/shots/replace-exercise.jpg" width="783" height="1024" alt="Replace Exercise reasons: no equipment, equipment busy, too difficult, or pain or discomfort." decoding="async">
+          </div>
+        </article>
+
+        <article class="band" id="shorten">
+          <div class="band-copy">
+            <p class="eyebrow">Plus · AI Pro</p>
+            <h2>Shorten today when time runs out.</h2>
+            <p>Choose how long you have, from 15 to 40 minutes, and start a shorter version of today.</p>
+            <p>Higher-priority lifts stay. Lower-priority accessories go first, and sets come down on the work in between. The saved weekly program is not rewritten.</p>
+            <ul class="band-points">
+              <li>Choose a time, then start</li>
+              <li>Keep the lifts that matter most</li>
+              <li>The regular plan stays as it is</li>
+            </ul>
+          </div>
+          <div class="shot-phone">
+            <img src="assets/shots/short-time.jpg" width="698" height="1024" alt="Short on Time choices from 15 to 40 minutes." decoding="async">
+          </div>
+        </article>
+
+        <article class="band band-note" id="load">
+          <div class="band-copy">
+            <p class="eyebrow">Plus</p>
+            <h2>See if the week is light, in range, or heavy.</h2>
+            <p>Training Load adds up the PumpIt sessions you logged, from duration and intensity, with volume and heart rate when those were logged too.</p>
+            <p>The detail marks the week Low, Optimal, or High against a range, and the chart runs from 7 days to a year. At first the range follows your experience and training days. After enough weeks it is labeled your optimal range. It is a training view, not a medical measure.</p>
+            <ul class="band-points">
+              <li>Built from the sessions you logged</li>
+              <li>Low, Optimal, or High against a range</li>
+              <li>Your own range once there is enough history</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="band" id="monitor">
+          <div class="band-copy">
+            <p class="eyebrow">AI Pro</p>
+            <h2>See when the week moved off your baseline.</h2>
+            <p>AI Training Monitor compares training load, volume, strength, energy, and consistency with your recent baseline.</p>
+            <p>It flags a change when something meaningful moved, and explains that change in plain language. The 68% on this screen is one example, not a typical week and not a medical finding.</p>
+            <ul class="band-points">
+              <li>One place for what changed this week</li>
+              <li>Load, volume, strength, energy, consistency</li>
+              <li>A note only when the shift is large enough</li>
+            </ul>
+          </div>
+          <div class="shot-phone">
+            <img src="assets/shots/monitor.jpg" width="538" height="1024" alt="AI Training Monitor showing Training Load, volume, strength, energy, and consistency against a recent baseline." decoding="async">
+          </div>
+        </article>
+
+        <article class="band" id="ai-coach">
+          <div class="band-copy">
+            <p class="eyebrow">AI Coach · AI Pro</p>
+            <h2>Understand what's improving and what to focus on next.</h2>
+            <p>Coach Score is a weekly number from consistency, strength, workout quality, and recovery. The coach can explain it. It does not invent the number.</p>
+            <p>The four parts show what is holding the week back. You choose the next sessions.</p>
+            <ul class="band-points">
+              <li>Consistency, strength, quality, recovery</li>
+              <li>A note on what moved</li>
+              <li>You choose the next workout</li>
+            </ul>
+          </div>
+          <div class="shot-phone">
+            <img src="assets/shots/coach-score.jpg" width="385" height="1024" alt="Coach Score with consistency, strength, workout quality, and recovery." decoding="async">
+          </div>
+        </article>
+
+        <article class="band band-note" id="adapt">
+          <div class="band-copy">
+            <p class="eyebrow">AI Pro</p>
+            <h2>A plan change only if you apply it.</h2>
+            <p>Adaptive Suggestion proposes a specific change when training load is high, energy is falling, or a skip pattern is strong enough.</p>
+            <p>That change can be a swap, an earlier placement, or less volume. Nothing is written to the program until you tap Apply Change. Keep Current Plan leaves it as it is. There is no background job editing the plan.</p>
+            <ul class="band-points">
+              <li>A specific change, not a vague tip</li>
+              <li>Apply Change, or Keep Current Plan</li>
+              <li>The program stays yours until you confirm</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="system">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Your complete training system</h2>
+          <p>The same account holds the plan, the session you log, and what changed afterward.</p>
+        </div>
+
+        <article class="band" id="programs">
+          <div class="band-copy">
+            <p class="eyebrow">Plans</p>
+            <h2>A program for where you train.</h2>
+            <p>Filter by level, equipment, and where you train, then follow a program or build your own.</p>
+            <p>Free builds by hand or starts from the starter library. Plus opens more than 400 programs and can match one to your goal and equipment. AI Pro can ask the coach to build a new plan. You review it before it is added.</p>
+            <ul class="band-points">
+              <li>Manual build on every plan</li>
+              <li>Library and Smart Plan on Plus</li>
+              <li>Instant AI on AI Pro</li>
+            </ul>
+          </div>
+          <div class="shot-phone">
+            <img src="assets/shots/programs.jpg" width="607" height="1024" alt="Program library filtered by Gym, Home, Office, and Park." decoding="async">
+          </div>
+        </article>
+
+        <article class="band flip" id="logging">
+          <div class="band-copy">
+            <p class="eyebrow">Every plan</p>
+            <h2>Log the session you actually trained.</h2>
+            <p>Update weight, reps, and sets while you train, then save the session.</p>
+            <p>Skip an exercise or replace it without losing the workout. History keeps what you did, including a day you missed and came back to.</p>
+            <ul class="band-points">
+              <li>Sets, weight, and reps while you train</li>
+              <li>Skip, replace, or save</li>
+              <li>The log matches what you did</li>
+            </ul>
+          </div>
+          <div class="shot-phone">
+            <img src="assets/shots/active-workout.jpg" width="398" height="1024" alt="Active workout with sets, weight, reps, and Replace Exercise." decoding="async">
+          </div>
+        </article>
+
+        <article class="band" id="progress">
+          <div class="band-copy">
+            <p class="eyebrow">Plus goes further</p>
+            <h2>See this month against the last.</h2>
+            <p>Every plan keeps records and recent history. Plus adds strength trends and this month against last month. AI Pro adds a short read on records, volume, time, and consistency.</p>
+            <p>On this example, consistency increased from 67% to 82% (+15 percentage points). The ↑22% under that sentence is the same change measured against last month's 67%. The other rows are relative changes: workouts 9 versus 8 (+13%), training time +56%, volume +86%, training load 385 versus 246 (+57%), and average workout 56 versus 41 minutes (+37%). These figures are one month, not a promised result.</p>
+            <ul class="band-points">
+              <li>Personal records</li>
+              <li>Strength and month to month on Plus</li>
+              <li>A plain-language read on AI Pro</li>
+            </ul>
+          </div>
+          <div class="shot-panel">
+            <img src="assets/shots/you-vs-you.jpg" width="1024" height="903" alt="This month compared with last month." decoding="async">
+          </div>
+        </article>
+
+        <article class="band flip" id="nutrition">
+          <div class="band-copy">
+            <p class="eyebrow">AI Pro</p>
+            <h2>See today's calories and macros.</h2>
+            <p>AI Pro sets a calorie and macro target and lists today's meals against it.</p>
+            <p>You can change the day. The numbers on this screen are one example. It is a training aid, not medical or dietetic advice.</p>
+            <ul class="band-points">
+              <li>Calories, protein, carbs, and fat</li>
+              <li>Meals for the day</li>
+              <li>Change the day when the plan needs it</li>
+            </ul>
+          </div>
+          <div class="shot-phone">
+            <img src="assets/shots/nutrition-today.jpg" width="512" height="1024" alt="Nutrition plan for today with calorie and macro targets and meals." decoding="async">
+          </div>
+        </article>
+
+        <article class="band" id="nutrition-plan">
+          <div class="band-copy">
+            <p class="eyebrow">AI Pro</p>
+            <h2>Plan the week, then shop from it.</h2>
+            <p>The week view totals the days, calories, and protein, and lays out each day's meals.</p>
+            <p>The shopping list is built from that plan. Check items off as you buy them.</p>
+            <ul class="band-points">
+              <li>A week of meals</li>
+              <li>Daily totals against the target</li>
+              <li>A shopping list from the plan</li>
+            </ul>
+          </div>
+          <div class="shot-carousel" data-carousel>
+            <button type="button" class="shot-nav shot-prev" aria-label="Previous screen">‹</button>
+            <div class="shot-carousel-view">
+              <div class="shot-slide is-active">
+                <div class="shot-phone">
+                  <img src="assets/shots/nutrition-week.jpg" width="512" height="1024" alt="Weekly nutrition plan with daily calorie and macro totals." decoding="async">
+                </div>
+              </div>
+              <div class="shot-slide">
+                <div class="shot-phone">
+                  <img src="assets/shots/shopping.jpg" width="505" height="1024" alt="Shopping list grouped from the nutrition plan." decoding="async">
+                </div>
+              </div>
+            </div>
+            <button type="button" class="shot-nav shot-next" aria-label="Next screen">›</button>
+            <div class="shot-dots">
+              <button type="button" class="shot-dot" aria-label="Nutrition plan" aria-current="true"></button>
+              <button type="button" class="shot-dot" aria-label="Shopping list"></button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="block" id="plans">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Choose your plan</h2>
+          <p>Google Play shows the price and currency before you purchase. The Free plan is how you start.</p>
+        </div>
+        <div class="plan-cards">
+          <article class="card plan-card">
+            <span class="tag tag-free">Free</span>
+            <h3>Start training</h3>
+            <p class="ad-free-kicker">100% Ad-Free. No Interruptions.</p>
+            <p>Enjoy your workouts without advertising interruptions.</p>
+            <ul>
+              <li>Start at no charge</li>
+              <li>Log sets, reps, and weight</li>
+              <li>Build a plan by hand</li>
+              <li>Swap an exercise yourself</li>
+            </ul>
+          </article>
+          <article class="card plan-card featured">
+            <span class="tag tag-plus">Plus</span>
+            <h3>More training tools</h3>
+            <p>For the library and tools that change today's session.</p>
+            <ul>
+              <li>Full library of more than 400 programs</li>
+              <li>A ready-made program matched to your profile</li>
+              <li>Suggested replacements and Short on Time</li>
+              <li>Strength trends and month-to-month progress</li>
+            </ul>
+          </article>
+          <article class="card plan-card">
+            <span class="tag tag-ai">AI Pro</span>
+            <h3>AI coaching</h3>
+            <p>For a coach on top of everything in Plus.</p>
+            <ul>
+              <li>Everything in Plus</li>
+              <li>A personal AI coach</li>
+              <li>A new plan built with AI</li>
+              <li>AI ranks replacement exercises</li>
+            </ul>
+          </article>
+        </div>
+        <p class="ad-free-note">Ad-free on Free, Plus, and AI Pro.</p>
+        <details class="compare">
+          <summary>Compare Free, Plus, and AI Pro</summary>
+          <div class="table-scroll">
+            <table class="plan-table">
+            <caption class="visually-hidden">Free, Plus, and AI Pro</caption>
+            <thead>
+              <tr>
+                <th scope="col">Feature</th>
+                <th scope="col">Free</th>
+                <th scope="col">Plus</th>
+                <th scope="col">AI Pro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="plan-group"><th colspan="4" scope="colgroup">Core</th></tr>
+              <tr>
+                <th scope="row">Program library</th>
+                <td>Starter</td>
+                <td>Full library</td>
+                <td>Full library</td>
+              </tr>
+              <tr>
+                <th scope="row">New plan</th>
+                <td>Limited</td>
+                <td>Everything</td>
+                <td>Everything</td>
+              </tr>
+              <tr>
+                <th scope="row">Existing plans</th>
+                <td>Basic</td>
+                <td>Advanced</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Progress</th>
+                <td>Basic</td>
+                <td>Advanced</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Body status</th>
+                <td>Basic</td>
+                <td>Advanced</td>
+                <td>Insights <span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Activity / Steps</th>
+                <td>Basic</td>
+                <td>Advanced</td>
+                <td>Insights <span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Training history</th>
+                <td>Recent</td>
+                <td>Full</td>
+                <td>Full</td>
+              </tr>
+              <tr>
+                <th scope="row">Goals</th>
+                <td>Included</td>
+                <td>Advanced</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">PUMPIT Energy</th>
+                <td>Included</td>
+                <td>Advanced</td>
+                <td>Insights <span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Running and walking</th>
+                <td>Basic</td>
+                <td>Analytics</td>
+                <td>Analysis <span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Automatic plan</th>
+                <td>Basic</td>
+                <td>Advanced</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Custom Exercise</th>
+                <td>Up to 50</td>
+                <td>Unlimited</td>
+                <td>Unlimited</td>
+              </tr>
+
+              <tr class="plan-group"><th colspan="4" scope="colgroup">Training</th></tr>
+              <tr>
+                <th scope="row">Personal records</th>
+                <td>Basic</td>
+                <td>Advanced</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Training trends</th>
+                <td>—</td>
+                <td>Included</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Advanced workout analytics</th>
+                <td>—</td>
+                <td>Included</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Replace Exercise</th>
+                <td>Included</td>
+                <td>Included</td>
+                <td>Included</td>
+              </tr>
+              <tr>
+                <th scope="row">Smart exercise replacement</th>
+                <td>—</td>
+                <td>Included</td>
+                <td>Included</td>
+              </tr>
+              <tr>
+                <th scope="row">AI Exercise Replacement</th>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Smart Workout Input</th>
+                <td>—</td>
+                <td>Included</td>
+                <td>Included</td>
+              </tr>
+              <tr>
+                <th scope="row">Smart Plan</th>
+                <td>—</td>
+                <td>Included</td>
+                <td>Included</td>
+              </tr>
+              <tr>
+                <th scope="row">Short on Time</th>
+                <td>—</td>
+                <td>Included</td>
+                <td>Included</td>
+              </tr>
+
+
+              <tr class="plan-group"><th colspan="4" scope="colgroup">Your AI Coach</th></tr>
+              <tr>
+                <th scope="row">AI Coach</th>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">AI Training Monitor</th>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">AI Goal Coach</th>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">AI Workout Review</th>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">AI Adaptive Suggestion</th>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">AI Skip Analysis</th>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">AI Recommendations</th>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">AI Weekly Review</th>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">AI Monthly Review</th>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">AI Goal Forecast</th>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+
+              <tr class="plan-group"><th colspan="4" scope="colgroup">Nutrition</th></tr>
+              <tr>
+                <th scope="row">AI Nutrition Plan</th>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Nutrition shopping list</th>
+                <td>—</td>
+                <td>—</td>
+                <td>Included</td>
+              </tr>
+              <tr>
+                <th scope="row">AI Nutrition Insights</th>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+              <tr>
+                <th scope="row">AI Supplements Insight</th>
+                <td>—</td>
+                <td>—</td>
+                <td><span class="plan-ai">AI</span></td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+          <p class="note">Words such as Basic, Advanced, and AI are the labels inside the app. A purple AI mark means the coach adds a read on that row. PUMPIT Watch, heart rate, workout controls, and advanced Energy on the watch are Coming soon on Plus and AI Pro. Subscriptions are billed by Google Play.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="block" id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Questions</h2>
+          <p>Before you download or subscribe.</p>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>What is included for free?</summary>
+            <p>The Free plan covers core training: log sets, reps, and weight, build a plan by hand, swap an exercise yourself, and keep recent history and records. You do not need a trial to start. Free, Plus, and AI Pro are all ad-free.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What is the difference between Plus and AI Pro?</summary>
+            <p>Plus adds the full program library, a program matched to your profile, suggested exercise replacements, Short on Time, and strength and month-to-month progress. AI Pro includes Plus, and adds the coach: a plan built in chat, ranked replacements, Adaptive Suggestion, Coach Score, Training Monitor, and nutrition.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do I have to use AI?</summary>
+            <p>No. Free and Plus work without the coach. AI Pro is optional.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does PumpIt support a watch right now?</summary>
+            <p>Not yet. PUMPIT Watch, heart rate, workout controls on the watch, and advanced Energy on the watch are marked Coming Soon. They are not available in the current Android app.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I manage a subscription?</summary>
+            <p>Google Play shows the price and currency before you purchase, and bills Plus and AI Pro. Manage or cancel the subscription in Google Play. Deleting a PumpIt account does not cancel the Play subscription. Help and account deletion are on the <a href="support/index.html">support page</a>.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="block cta-band" id="download" style="padding-top:0">
+      <div class="wrap">
+        <h2>Get PUMPIT on Google Play</h2>
+        <p>Start free · Available on Android</p>
+        <p class="hero-download">
+          <a class="store-link" href="https://play.google.com/store/apps/details?id=com.pumpit.fitness" aria-label="Get PUMPIT on Google Play">
+            <img src="assets/google-play-badge.png" width="646" height="250" alt="" decoding="async">
+          </a>
+        </p>
+        <p class="hero-soon">iPhone version coming soon</p>
+        <p class="cta-links">
+          <a href="support/index.html">Support</a>
+          <a href="privacy/index.html">Privacy Policy</a>
+          <a href="terms/index.html">Terms of Service</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <img src="assets/mark.png" alt="" width="68" height="33">
+          PumpIt
+        </a>
+        <p>Your Training. Your Way.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="privacy/index.html">Privacy Policy</a></li>
+        <li><a href="terms/index.html">Terms of Service</a></li>
+        <li><a href="support/index.html">Support</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.pumpit.fitness">Google Play</a></li>
+      </ul>
+    </div>
+    <div class="wrap">
+      <p class="legal-line">PumpIt is a fitness tool. It is not medical advice. © 2026 PumpIt. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
