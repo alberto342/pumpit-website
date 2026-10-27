@@ -381,19 +381,16 @@ h1 span {
 .store-link {
   display: inline-flex;
   line-height: 0;
-  padding: 6px 10px;
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 10px;
-  background: rgba(8, 14, 26, 0.35);
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  padding: 5px 8px;
+  border: 1px solid rgba(160, 170, 185, 0.35);
+  border-radius: 8px;
+  background: rgba(140, 150, 165, 0.14);
+  transition: border-color 0.2s ease;
 }
 
 .store-link:hover,
 .store-link:focus-visible {
   border-color: var(--azure);
-  box-shadow:
-    0 0 0 1px rgba(0, 127, 255, 0.45),
-    0 0 18px rgba(0, 127, 255, 0.35);
   outline: none;
 }
 
@@ -1564,11 +1561,11 @@ tbody th {
 }
 
 .why-row {
-  padding: 22px 0 8px;
+  padding: 18px 0 0;
 }
 
 .why-row h2 {
-  margin: 0 0 14px;
+  margin: 0 0 10px;
   font-size: 1.15rem;
   letter-spacing: 0.01em;
   text-align: center;
@@ -1580,7 +1577,7 @@ tbody th {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 12px;
+  gap: 10px;
 }
 
 .why-row-list li,
@@ -1595,9 +1592,9 @@ tbody th {
 }
 
 .why-row-list li {
-  padding: 16px 12px;
+  padding: 12px 10px;
   border: 1px solid var(--border);
-  border-radius: 16px;
+  border-radius: 14px;
   background: #121a2b;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
@@ -1618,23 +1615,23 @@ tbody th {
 .why-icon {
   display: grid;
   place-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 12px;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
   color: var(--azure);
   background: rgba(0, 127, 255, 0.12);
 }
 
 .why-row-list h3 {
-  margin: 10px 0 4px;
-  font-size: 1rem;
+  margin: 8px 0 2px;
+  font-size: 0.95rem;
 }
 
 .why-row-list p {
   margin: 0;
   color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.4;
+  font-size: 0.86rem;
+  line-height: 1.35;
 }
 
 .why-row-list li.why-ai {
@@ -1650,18 +1647,20 @@ tbody th {
     0 0 22px rgba(0, 127, 255, 0.32);
 }
 
-.why-ai-label {
-  display: inline-block;
-  margin: 10px 0 0;
-  color: var(--azure-light);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
+.why-ai-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
-.why-ai .view-feature {
-  margin-top: auto;
-  padding-top: 10px;
+.why-ai-label {
+  display: inline-block;
+  margin: 0;
+  color: var(--azure-light);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
 }
 
 .plan-card p.ad-free-kicker {
@@ -1756,6 +1755,7 @@ tbody th {
   right: 22px;
   bottom: 18px;
   z-index: 2;
+  padding: 4px 6px;
 }
 
 .hero-play img {
@@ -1810,6 +1810,41 @@ tbody th {
   font-size: 0.95rem;
 }
 
+.discover-stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 6px;
+}
+
+.discover-art {
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.discover-stage .why-on-discover {
+  grid-row: 1;
+  grid-column: 1;
+  z-index: 2;
+  align-self: start;
+  width: 100%;
+  margin: 0;
+  padding: clamp(10px, 1.4vw, 18px) clamp(12px, 2.2vw, 26px) 0;
+  box-sizing: border-box;
+  pointer-events: auto;
+}
+
+@media (max-width: 719px) {
+  .discover-stage .why-on-discover {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+}
+
 .discover-grid {
   display: grid;
   gap: 14px;
@@ -1832,6 +1867,29 @@ tbody th {
   color: var(--muted);
   font-size: 0.98rem;
   line-height: 1.45;
+}
+
+.discover-all-screens {
+  position: absolute;
+  left: 50%;
+  top: 91%;
+  z-index: 3;
+  transform: translateX(-50%);
+  width: clamp(100px, 14vw, 148px);
+  height: clamp(26px, 3.6vw, 34px);
+  border-radius: 4px;
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.discover-all-screens:hover {
+  background: rgba(0, 127, 255, 0.14);
+}
+
+.discover-all-screens:focus-visible {
+  outline: 2px solid var(--azure-light);
+  outline-offset: 2px;
 }
 
 .shot-wide {
@@ -1862,6 +1920,10 @@ tbody th {
 #features-detail,
 #system {
   padding: 64px 0;
+}
+
+#discover {
+  padding-top: 36px;
 }
 
 #discover,
@@ -1930,6 +1992,50 @@ tbody th {
   margin: 6px 0 0;
   color: var(--muted);
   font-size: 0.82rem;
+}
+
+.get-app-shot {
+  position: relative;
+  margin: 18px auto 10px;
+  max-width: 920px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.get-app-shot > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.get-app-play {
+  position: absolute;
+  left: 54%;
+  bottom: 5.5%;
+  z-index: 2;
+  transform: translateX(-50%);
+  padding: 6px 10px;
+  border-radius: 10px;
+  background: rgba(11, 18, 32, 0.55);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.get-app-play img {
+  height: clamp(38px, 5.2vw, 54px);
+  width: auto;
+}
+
+@media (max-width: 640px) {
+  .get-app-play {
+    left: 50%;
+    bottom: 4.5%;
+    padding: 5px 8px;
+  }
+
+  .get-app-play img {
+    height: 34px;
+  }
 }
 
 .hero-download img {
