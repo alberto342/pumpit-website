@@ -1817,10 +1817,15 @@ tbody th {
   margin-top: 6px;
 }
 
-.discover-art {
+.discover-art-frame {
   grid-row: 1;
   grid-column: 1;
   z-index: 0;
+  position: relative;
+  width: 100%;
+}
+
+.discover-art {
   display: block;
   width: 100%;
   height: auto;
@@ -1836,6 +1841,56 @@ tbody th {
   padding: clamp(10px, 1.4vw, 18px) clamp(12px, 2.2vw, 26px) 0;
   box-sizing: border-box;
   pointer-events: auto;
+}
+
+@media (max-width: 899px) {
+  .discover-stage {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .discover-stage .why-on-discover {
+    position: static;
+    grid-row: auto;
+    grid-column: auto;
+    padding: 0;
+    z-index: auto;
+    order: 1;
+    flex: 0 0 auto;
+  }
+
+  .discover-art-frame {
+    grid-row: auto;
+    grid-column: auto;
+    flex-shrink: 0;
+    order: 2;
+    width: 100%;
+  }
+
+  #energy.band {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #energy.band .shot-wide {
+    order: -1;
+    margin: 0 auto 4px;
+  }
+}
+
+@media (min-width: 900px) {
+  .discover-stage {
+    display: grid;
+  }
+
+  .discover-stage .why-on-discover {
+    order: unset;
+  }
+
+  .discover-art-frame {
+    order: unset;
+  }
 }
 
 @media (max-width: 719px) {
